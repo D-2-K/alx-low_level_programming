@@ -4,7 +4,7 @@
  * main - print lowercase alphabet ten times
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int x;
 	int a;
