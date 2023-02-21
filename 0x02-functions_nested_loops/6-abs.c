@@ -7,11 +7,8 @@
  */
 
 int _abs(int a)
-{
-	int a;
 
-	a = abs(5);
-	_putchar("value of a = %d\n", a);
-
-	return (0);
+	if (a < 0)
+	a = -a
+	return (a);
 }
