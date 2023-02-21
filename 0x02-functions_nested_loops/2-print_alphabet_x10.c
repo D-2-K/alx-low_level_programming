@@ -2,17 +2,16 @@
 
 /**
  * main - print lowercase alphabet ten times
- *
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
 	int x;
-	char letter;
+	int a;
 
 	for (x = 1; x <= 10; x++)
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-			_putchar(letter);
+		for (a = 'a'; a <= 'z'; a++)
+			_putchar(a);
 		_putchar('\n');
-
+	}
 }
