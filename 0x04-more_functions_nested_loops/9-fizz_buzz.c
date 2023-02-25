@@ -1,28 +1,25 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Fizz Buzz test
- *
+ * main - print fizzbuzz
  * Return: always 0
  */
 
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 1; i <= 100; i++)
+	printf("1");
+	for (n = 2; n <= 100; n++)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
-			printf("FizzBuzz ");
-		else if (i % 3 == 0)
-			printf("Fizz ");
-		else if (i % 5 == 0)
-			printf("Buzz ");
-		else
-			printf("%d ", i);
+		printf(" ");
+		if (n % 3 == 0)
+			printf("Fizz");
+		if (n % 5 == 0)
+			printf("Buzz");
+		if (n % 3 != 0 && n % 5 != 0)
+			printf("%d", n);
 	}
 	printf("\n");
-
 	return (0);
 }
